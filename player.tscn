@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bx4wgmgvvuktc"]
+
+[ext_resource type="Script" uid="uid://cj40exjdxh50j" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://10fss7jcy2t6" path="res://WhatsApp Image 2026-11-15 at 9.20.32 AM.jpeg" id="2_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v1xux"]
+radius = 5.0990195
+
+[node name="player" type="CharacterBody2D" unique_id=829986611]
+position = Vector2(-2816, -985)
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316689332]
+position = Vector2(71.999985, 93.77775)
+scale = Vector2(0.023121482, 0.015571771)
+texture = ExtResource("2_onrkg")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D" unique_id=1579175330]
+position = Vector2(1520.5204, 1478.1027)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=701633093]
+position = Vector2(73, 95)
+shape = SubResource("CircleShape2D_v1xux")
